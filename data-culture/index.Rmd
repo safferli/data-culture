@@ -38,7 +38,7 @@ titlepage
 
 ***
 
-### what is data used for?
+### What should data be used for?
 
 - learn from past mistakes and successes
 - make correct prediction for the future
@@ -49,43 +49,76 @@ titlepage
 
 ---
 
-## Data at Ubisoft
+## Data use in a company
 
 - metrics/KPIs 
 - avoid "endless KPI treadmill"
 - "illusion of control"
 
 
----
+--- &vertical
 
 ## Responsibility
 
 ![](./assets/img/ohm.png)
 
-https://xkcd.com/643/
+<small>https://xkcd.com/643/</small>
+
+***
 
 - understand KPIs, data, and what they mean
 - understand the implications of them! 
     (pretty is powerful)
 
+<!--
 https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770
+-->
 
 
 --- &vertical
 
-## action plan 
-
-- get experts on board
-- learn from mistakes (difficult, als decision-making is intransparent)
-- don't be deluded into thinking you have reached understanding
-- understand human behaviour: ranking changes efforts! (mechanism design)
-- metrics aid decision-making, not short-cut it
+## Action plan 
 
 ***
 
+### get experts on board
+
 ![](./assets/img/clueless-dog.png)
 
+***
+
+### learn from mistakes 
+
+![](./assets/img/you-had-one-job-cities-skylines.jpg)
+
+<!--
+difficult, als decision-making is intransparent
+-->
+
+***
+
+### don't be deluded into thinking you have reached understanding
+
+![](./assets/img/yes-no-maybe.gif)
+
+<!--
 https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-data-university-3eccc71e073a
+-->
+
+***
+
+### understand human behaviour
+
+![](./assets/img/psychiatrist-no-friends.jpg)
+
+ranking changes efforts! (mechanism design)
+
+***
+
+### metrics aid decision-making, not short-cut it
+
+(producer traffic lights)
+
 
 
 
