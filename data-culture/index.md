@@ -14,15 +14,73 @@ knit        : slidify::knit2slides
 
 
 
-## Read-And-Delete
+titlepage
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+--- &vertical
 
---- .class #id 
+## Culture
 
-## Slide 2
+> (2) The ideas, customs, and social behaviour of a particular people or society  
+>   
+> [OED definition](https://en.oxforddictionaries.com/definition/culture)
+
+***
+
+![](./assets/img/different-faces-of-david-bowie.gif)
+
+<small>Helen Green: http://dollychops.tumblr.com/image/107517113745</small>
+
+
+---
+
+## Data at Ubisoft
+
+metrics/KPIs 
+avoid "endless KPI treadmill"
+see through "illusion of control"
+
+### what is data used for?
+
+- learn from past mistakes and successes
+- make correct prediction for the future
+- *not* to check the present!
+    - this is monitoring
+    - drives behaviour towards the KPIs
+
+
+---
+
+## Responsibility
+
+![](./assets/img/ohm.png)
+
+https://xkcd.com/643/
+
+- understand KPIs, data, and what they mean
+- understand the implications of them! 
+    (pretty is powerful)
+
+https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770
+
+
+--- &vertical
+
+## action plan 
+
+- get experts on board
+- learn from mistakes (difficult, als decision-making is intransparent)
+- don't be deluded into thinking you have reached understanding
+- understand human behaviour: ranking changes efforts! (mechanism design)
+- metrics aid decision-making, not short-cut it
+
+***
+
+![](./assets/img/clueless-dog.png)
+
+https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-data-university-3eccc71e073a
+
+
+
 
 
 
