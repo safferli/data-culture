@@ -45,11 +45,13 @@ titlepage
 
 ---
 
-## Data use in a company
+## Data (mis-)use 
 
 - metrics/KPIs 
+    - make forecasting ubiquitous (Twitch forecasting)
 - avoid "endless KPI treadmill"
 - "illusion of control"
+
 
 
 --- &vertical
@@ -62,9 +64,9 @@ titlepage
 
 ***
 
-- understand KPIs, data, and what they mean
+- know KPIs, data, and what they mean
 - understand the implications of them! 
-    (pretty is powerful)
+    - (pretty is powerful)
 
 <!--
 https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770
@@ -75,7 +77,7 @@ https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770
 
 ## Action plan 
 
-***
+***""
 
 ### get experts on board
 
