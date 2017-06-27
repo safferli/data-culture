@@ -10,7 +10,9 @@ hitheme     : tomorrow      #
 widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
----
+revealjs: 
+    theme: default
+--- ds:intro
 
 ```{r setup, include=FALSE}
 # golden ratio: 0.5*(1+sqrt(5))
@@ -18,7 +20,72 @@ knitr::opts_chunk$set(fig.width=10, fig.asp=(2/(1+sqrt(5))))
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-titlepage
+<!-- adjust background for "intro" slides -->
+<style>
+html.intro body {
+background:url("./assets/img/ubi-background.jpg");
+background-position:center;
+background-size: 100%;
+} 
+html.ubi body {
+background:url("./assets/img/bluebyte.jpg");
+background-position: 85% 85%;
+background-repeat: no-repeat;
+background-size: 250px;
+} 
+html.thanks body {
+background:url("./assets/img/thanks-reel.png");
+background-position:center;
+background-repeat: no-repeat;
+background-size: contain;
+} 
+</style>
+
+
+<p style="color: #13DAEC; font-family: 'Lato', sans-serif; font-size: 150%; margin: 0 0 10% 0;">
+  Data Culture<br />
+  <span style="font-size: 80%;">Freedom for Analysts and Data Engineers</span>
+</p>
+
+<p style="font-size: 100%; color: #000000;">
+  Christoph Safferling
+</p>
+<p style="font-size: 80%; margin: 3% 0 0 0; color: #222222;">
+  Head of Game Analytics and User Research<br/ > 
+  Ubisoft Blue Byte
+</p>
+
+<!-- fuck CSS... why can't I include this in a custom CSS? -->
+
+<style>
+.reveal {color: #231F20;}
+.reveal h2, .reveal h3 {color: #222222;}
+</style>
+
+<style>
+.gif150
+{
+  width: 150%;
+  height: auto;
+}
+</style>
+
+
+<!--
+--- ds:ubi
+
+## Ubisoft Blue Byte
+
+- Ubisoft
+    - created in 1986
+    - ranked among the top 5 video game publishers
+    - 15 franchises selling 1M+
+- Blue Byte
+    - founded in 1988
+    - acquired by Ubisoft in 2001
+    - Settlers and Anno brand
+    - co-development on Rainbow6 and For Honor
+-->
 
 --- &vertical
 
@@ -119,8 +186,9 @@ ranking changes efforts! (mechanism design)
 
 ### metrics aid decision-making, not short-cut it!
 
+<!--
 (producer traffic lights)
-
+-->
 
 
 
