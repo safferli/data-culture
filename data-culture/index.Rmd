@@ -138,10 +138,16 @@ background-size: contain;
 - know KPIs, data, and what they mean
 - understand the implications of them! 
     - (pretty is powerful)
+- use your data power wisely (will never happen...)
+    - principal-agent theory!
 
 <!--
 https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770
 -->
+
+***
+
+- data culture means using other people's data! 
 
 
 --- &vertical
@@ -190,7 +196,8 @@ ranking changes efforts! (mechanism design)
 (producer traffic lights)
 -->
 
-
+- use other people's data
+    - understand their problems and viewpoints
 
 
 
