@@ -17,21 +17,8 @@ output:
 Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 </aside>
 
-## R Markdown
+Note that this is all from the viewpoint of a large, multinational company
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-# Test two
-
-## asdf
 
 <p style="color: #13DAEC; font-family: 'Lato', sans-serif; font-size: 150%; margin: 0 0 10% 0;">
   Data Culture<br />
@@ -46,9 +33,9 @@ When you click the **Knit** button a document will be generated that includes bo
   Ubisoft Blue Byte
 </p>
 
---- &vertical
+***
 
-## Culture
+### Culture
 
 > (2) The ideas, customs, and social behaviour of a particular people or society  
 >   
@@ -56,9 +43,9 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ***
 
-## Data
+### Data
 
-![](./assets/img/different-faces-of-david-bowie.gif)
+![](data-culture_files/img/different-faces-of-david-bowie.gif)
 
 <small>by [Helen Green](http://dollychops.tumblr.com/image/107517113745)</small>
 
@@ -69,26 +56,29 @@ When you click the **Knit** button a document will be generated that includes bo
 - learn from past mistakes and successes
 - make correct prediction for the future
 - *not* to check the present!
-    - this is monitoring
-    - drives behaviour towards the KPIs
 
+<aside class="notes">
+- checking the present is monitoring
+- drives behaviour towards the KPIs
+</aside>
 
 ---
 
 ## Data (mis-)use 
 
 - metrics/KPIs 
-    - make forecasting ubiquitous (Twitch forecasting)
 - avoid "endless KPI treadmill"
 - "illusion of control"
 
+<aside class="notes">
+metrics/KPIs: 
+- make forecasting ubiquitous (Twitch forecasting)
+</aside>
 
-
---- &vertical
 
 ## Responsibility
 
-![](./assets/img/ohm.png)
+![](./data-culture_files/img/ohm.png)
 
 <small>https://xkcd.com/643/</small>
 
@@ -97,66 +87,64 @@ When you click the **Knit** button a document will be generated that includes bo
 - know KPIs, data, and what they mean
 - understand the implications of them! 
     - (pretty is powerful)
-- use your data power wisely (will never happen...)
-    - principal-agent theory!
+- use your data power wisely (this will never happen...)
+    - principal-agent theory
 
-<!--
+<aside class="notes">
 https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770
--->
+</aside>
 
 ***
 
-- data culture means using other people's data! 
+data culture means using other people's data! 
 
 
---- &vertical
 
-## Action plan 
+# Action plan 
 
-***""
+## get experts on board
 
-### get experts on board
+![](./data-culture_files/img/clueless-dog.png)
 
-![](./assets/img/clueless-dog.png)
 
-***
+## learn from mistakes 
 
-### learn from mistakes 
+![](data-culture_files/img/you-had-one-job-cities-skylines.jpg)
 
-![](./assets/img/you-had-one-job-cities-skylines.jpg)
-
-<!--
+<aside class="notes">
 difficult, als decision-making is intransparent
--->
+</aside>
 
-***
 
-### don't be deluded into thinking you have reached understanding
+## you'll never reach understanding
 
-![](./assets/img/yes-no-maybe.gif)
+![](./data-culture_files/img/yes-no-maybe.gif)
 
-<!--
+<aside class="notes">
 https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-data-university-3eccc71e073a
--->
+</aside>
 
-***
 
-### understand human behaviour
+## understand human behaviour
 
-![](./assets/img/psychiatrist-no-friends.jpg)
+![](./data-culture_files/img/psychiatrist-no-friends.jpg)
 
-ranking changes efforts! (mechanism design)
+<aside class="notes">
+- ranking changes efforts! (mechanism design)
+- we’re a gaming company – we should be really good at this! 
+- metrics drive behavior towards the KPI!
+</aside>
 
-***
+## metrics aid decision-making, not short-cut it!
 
-### metrics aid decision-making, not short-cut it!
-
-<!--
+<aside class="notes">
 (producer traffic lights)
--->
+</aside>
 
-- use other people's data
-    - understand their problems and viewpoints
+- be humble
+- use other people's data: you'll understand their problems and viewpoints
+- don't lose the holistic view
+
 
 
 
