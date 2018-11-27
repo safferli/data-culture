@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Christoph Safferling" />
+  <meta name="dcterms.date" content="2018-11-28" />
+  <title>Data Culture</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="data-culture_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="data-culture_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="data-culture_files\ubi.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Data Culture</h1>
+    <h2 class="author">Christoph Safferling</h2>
+    <h3 class="date">November 28, 2018</h3>
+</section>
+
+<section><section id="vocabulary" class="title-slide slide level1" data-background="./data-culture_files/img/Freud.png"><h1>Vocabulary</h1></section><section class="slide level2">
+
+<!--
+<video width="480" height="480" loop=false autoplay=true>
+  <source src="data-culture_files/img/ubisoft.mp4" type="video/mp4">
+</video> 
+-->
+<p class="stretch">
+<img src="data-culture_files/img/ubisoft%20stacked%20logo_black.png" style="background:none; border:none; box-shadow:none; height=20%;">
+</p>
+<aside class="notes">
+<ul>
+<li>Note that this is all from the viewpoint of a large, multinational company</li>
+<li>very data-keen, and data-open management</li>
+</ul>
+</aside>
+</section><section id="culture" class="slide level2">
+<h2>Culture</h2>
+<blockquote>
+<ol start="2" type="1">
+<li>The ideas, customs, and social behaviour of a particular people or society</li>
+</ol>
+<p><a href="https://en.oxforddictionaries.com/definition/culture">OED definition</a></p>
+</blockquote>
+</section><section id="data" class="slide level2">
+<h2>Data</h2>
+<video width="480" height="480" loop=true autoplay=true>
+<source src="data-culture_files/img/different-faces-of-david-bowie.mp4" type="video/mp4">
+</video>
+<p><small>by <a href="http://dollychops.tumblr.com/image/107517113745">Helen Green</a></small></p>
+</section></section>
+<section><section id="situation" class="title-slide slide level1" data-background="./data-culture_files/img/business-rabbid.png"><h1>Situation</h1></section><section id="what-should-data-be-used-for" class="slide level2">
+<h2>What should data be used for?</h2>
+<ul>
+<li>learn from past mistakes and successes</li>
+<li>make correct predictions for the future</li>
+<li><em>not</em> to check the present!</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>checking the present is monitoring</li>
+<li>BUT: we will see that this drives behaviour towards the KPIs</li>
+<li>doctors with “track records” refuse to operate on older patients</li>
+</ul>
+</aside>
+</section><section id="data-mis-use" class="slide level2">
+<h2>Data (mis-)use</h2>
+<ul>
+<li>metrics and KPIs drive behaviour</li>
+<li>data as substitute for a trusted opinion
+<ul>
+<li>avoid “endless KPI treadmill”</li>
+<li>“illusion of control”</li>
+</ul></li>
+</ul>
+<aside class="notes">
+Rather than rely on the informed judgment of people familiar with the situation, we gather meaningless numbers at great cost. metrics/KPIs: - 4Ts: teaching to the test - make forecasting ubiquitous (Twitch forecasting)
+</aside>
+</section><section id="responsibility" class="slide level2">
+<h2>Responsibility</h2>
+<p><img data-src="./data-culture_files/img/ohm.png" /></p>
+<p><small><a href="https://xkcd.com/643/" class="uri">https://xkcd.com/643/</a></small></p>
+</section><section class="slide level2">
+
+<ul>
+<li>know KPIs, data, and what they mean</li>
+<li>understand the implications of them!
+<ul>
+<li>(pretty is powerful)</li>
+</ul></li>
+<li>teach your organisation data skills</li>
+<li>use your data power wisely (this will never happen…)
+<ul>
+<li>principal-agent theory</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<a href="https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770" class="uri">https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770</a>
+</aside>
+</section><section class="slide level2">
+
+<p>data culture means using other people’s data!</p>
+<aside class="notes">
+<ul>
+<li>know their viewpoints</li>
+<li>know their problems</li>
+<li>know their strengths</li>
+</ul>
+</aside>
+</section></section>
+<section><section id="action-plan" class="title-slide slide level1" data-background="./data-culture_files/img/actionplan-rabbid.png"><h1>Action plan</h1></section><section id="get-experts-on-board" class="slide level2">
+<h2>get experts on board</h2>
+<p><img data-src="./data-culture_files/img/clueless-dog.png" /></p>
+</section><section id="learn-from-mistakes" class="slide level2">
+<h2>learn from mistakes</h2>
+<p><img data-src="data-culture_files/img/you-had-one-job-cities-skylines.jpg" /></p>
+<aside class="notes">
+difficult, als decision-making is intransparent
+</aside>
+</section><section id="youll-never-reach-understanding" class="slide level2">
+<h2>you’ll never reach understanding</h2>
+<p><img data-src="./data-culture_files/img/yes-no-maybe.gif" /></p>
+<aside class="notes">
+<a href="https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-data-university-3eccc71e073a" class="uri">https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-data-university-3eccc71e073a</a>
+</aside>
+</section><section id="understand-human-behaviour" class="slide level2">
+<h2>understand human behaviour</h2>
+<p><img data-src="./data-culture_files/img/psychiatrist-no-friends.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>ranking changes efforts! (mechanism design)</li>
+<li>we’re a gaming company – we should be really good at this!</li>
+<li>metrics drive behavior towards the KPI!</li>
+</ul>
+</aside>
+</section><section id="metrics-aid-decision-making-not-short-cut-it" class="slide level2">
+<h2>metrics aid decision-making, not short-cut it!</h2>
+<aside class="notes">
+<ul>
+<li>(producer traffic lights)</li>
+<li>us analysts always use metrics for decision-making in areas we have little expertise</li>
+</ul>
+</aside>
+<ul>
+<li>be humble</li>
+<li>use other people’s data: you’ll understand their problems and viewpoints</li>
+<li>don’t lose the holistic view</li>
+</ul>
+</section></section>
+<section><section id="thanks" class="title-slide slide level1" data-background="./data-culture_files/img/Hanging_Rabbid.png"><h1>Thanks!</h1></section><section id="contact-me" class="slide level2" data-background="./data-culture_files/img/Napoleon.png">
+<h2>Contact me</h2>
+<p><a href="mailto:christoph.safferling@ubisoft.com" class="email">christoph.safferling@ubisoft.com</a><br />
+github: <a href="https://github.com/safferli/data-culture"><span class="citation" data-cites="safferli/data-culture">@safferli/data-culture</span></a></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="data-culture_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="data-culture_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'data-culture_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

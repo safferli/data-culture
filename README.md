@@ -1,3 +1,3 @@
 # Data Culture
 
-How to avoid the "endless KPI treadmill"
+A presentation on what Data Culture means for an organisation, and how to foster it. 
