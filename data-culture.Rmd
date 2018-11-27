@@ -165,7 +165,7 @@ https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-
 https://www.amazon.co.uk/Tyranny-Metrics-Jerry-Z-Muller
 </aside>
 
-## Contact me
+## Contact me {data-background="./data-culture_files/img/Napoleon.png"}
 
 christoph.safferling@ubisoft.com  
 github: <a href="https://github.com/safferli/data-culture">@safferli/data-culture</a>  
