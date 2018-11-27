@@ -9,3 +9,18 @@ html body {
   background: radial-gradient(center, circle cover, #e1e9f6 0%, #fefefe 100%);
 }
 
+.reveal {color: #231F20;}
+.reveal h2, .reveal h3 {color: #222222;}
+
+
+.gif150
+{
+  width: 150%;
+  height: auto;
+}
+
+.gif75
+{
+  width: 75%;
+  height: auto;
+}

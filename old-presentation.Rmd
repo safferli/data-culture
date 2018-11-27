@@ -34,7 +34,7 @@ background-repeat: no-repeat;
 background-size: 250px;
 } 
 html.thanks body {
-background:url("./assets/img/thanks-reel.png");
+background:url("./data-culture_files/img/thanks-reel.png");
 background-position:center;
 background-repeat: no-repeat;
 background-size: contain;
@@ -200,6 +200,7 @@ ranking changes efforts! (mechanism design)
     - understand their problems and viewpoints
 
 
+# Thanks! {.thanks}
 
 
 
