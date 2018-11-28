@@ -167,7 +167,7 @@ https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-
 ## metrics aid decision-making, not short-cut it!
 
 - be humble
-- use other people's data: you'll understand their problems and viewpoints
+- use (and share) other people's data
 - don't lose the holistic view
 
 <aside class="notes">
