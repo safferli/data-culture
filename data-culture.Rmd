@@ -33,6 +33,7 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 <aside class="notes">
 - Note that this is all from the viewpoint of a large, multinational company
 - very data-keen, and data-open management
+- but sometimes slow, and cumbersome with many stakeholders
 </aside>
 
 
@@ -41,6 +42,11 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 > (2) The ideas, customs, and social behaviour of a particular people or society  
 >   
 > [OED definition](https://en.oxforddictionaries.com/definition/culture)
+
+<aside class="notes">
+- customs and social behaviour here is key -- how do we _actually_ use data?
+- also: *implicit contracts*
+</aside>
 
 
 ## Data
@@ -51,20 +57,26 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 
 <small>by [Helen Green](http://dollychops.tumblr.com/image/107517113745)</small>
 
+<aside class="notes">
+- data can be anything: an idea, your Word document, a business plan
+- we are used to thinking data is only _highly structured, digital data_
+</aside>
 
 
-# Situation {data-background="./data-culture_files/img/business-rabbid.png"}
+# State of the Union {data-background="./data-culture_files/img/business-rabbid.png"}
 
 ## What should data be used for?
 
-- learn from past mistakes and successes
+- learn from past and current mistakes and successes
 - make correct predictions for the future
-- *not* to check the present!
+- checking the present: monitoring
+- _evaluate_, but not _check_ or _review_!
 
 <aside class="notes">
+- _evaluating_  is good! (peers evaluate, superiors check and monitor)
 - checking the present is monitoring
 - BUT: we will see that this drives behaviour towards the KPIs
-- doctors with "track records" refuse to operate on older patients
+  - doctors with "track records" refuse to operate on older patients
 </aside>
 
 
@@ -72,13 +84,14 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 
 - metrics and KPIs drive behaviour
 - data as substitute for a trusted opinion
-    - avoid "endless KPI treadmill"
-    - "illusion of control"
+    - gather data at great cost
+    - avoid endless KPI treadmill
+    - illusion of control
 
 <aside class="notes">
-Rather than rely on the informed judgment of people familiar with the situation, we gather meaningless numbers at great cost. 
-metrics/KPIs: 
-- 4Ts: teaching to the test
+- rather than trust informed judgement of experts, we gather meaningless numbers at great cost
+- metrics/KPIs: 
+    - 4Ts: teaching to the test
 - make forecasting ubiquitous (Twitch forecasting)
 </aside>
 
@@ -92,11 +105,12 @@ metrics/KPIs:
 ***
 
 - know KPIs, data, and what they mean
-- understand the implications of them! 
+- understand their implications
     - (pretty is powerful)
-- teach your organisation data skills
-- use your data power wisely (this will never happen...)
+- teach your organisation 
+- use your data power wisely 
     - principal-agent theory
+    - mechanism design
 
 <aside class="notes">
 https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770
@@ -104,12 +118,14 @@ https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770
 
 ***
 
-data culture means using other people's data! 
+## data culture means using other people's data! 
 
 <aside class="notes">
-- know their viewpoints
-- know their problems
-- know their strengths
+- ALSO let them use your data!
+- know/share
+    - viewpoints
+    - problems
+    - strengths
 </aside>
 
 
@@ -143,21 +159,22 @@ https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-
 ![](./data-culture_files/img/psychiatrist-no-friends.jpg)
 
 <aside class="notes">
-- ranking changes efforts! (mechanism design)
+- ranking changes efforts (mechanism design)
+- metrics drive behavior towards the KPI
 - we’re a gaming company – we should be really good at this! 
-- metrics drive behavior towards the KPI!
 </aside>
 
 ## metrics aid decision-making, not short-cut it!
+
+- be humble
+- use other people's data: you'll understand their problems and viewpoints
+- don't lose the holistic view
 
 <aside class="notes">
 - (producer traffic lights)
 - us analysts always use metrics for decision-making in areas we have little expertise
 </aside>
 
-- be humble
-- use other people's data: you'll understand their problems and viewpoints
-- don't lose the holistic view
 
 # Thanks! {data-background="./data-culture_files/img/Hanging_Rabbid.png"}
 
